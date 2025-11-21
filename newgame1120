@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>New Game Showcase – Spin Crush</title>
+<style>
+    body {
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        background: radial-gradient(circle at top, #0e0e0e, #000);
+        color: #fff;
+    }
+
+    .wrap {
+        max-width: 950px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    /* Banner */
+    .banner-box {
+        position: relative;
+        border-radius: 14px;
+        overflow: hidden;
+        margin-bottom: 35px;
+        box-shadow: 0 0 25px rgba(255, 200, 50, 0.25);
+    }
+    .banner-box img {
+        width: 100%;
+        display: block;
+    }
+    .banner-title {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        font-size: 32px;
+        font-weight: 700;
+        text-shadow: 0 0 10px rgba(0,0,0,0.6);
+        color: #ffe08a;
+    }
+
+    /* Game Cards */
+    .games {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .game-card {
+        background: linear-gradient(145deg, #1a1a1a, #111);
+        border-radius: 14px;
+        padding: 22px;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        box-shadow: 0 0 15px rgba(0,0,0,0.4);
+        border: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .game-card img {
+        width: 120px;
+        height: 120px;
+        border-radius: 12px;
+        background: #222;
+        object-fit: cover;
+        border: 2px solid #444;
+    }
+
+    .game-info h2 {
+        margin: 0 0 10px;
+        font-size: 24px;
+        font-weight: 700;
+        color: #f2c14e;
+        text-shadow: 0 0 6px rgba(242,193,78,0.4);
+    }
+    .game-info p {
+        margin: 0;
+        color: #ccc;
+        line-height: 1.5;
+        font-size: 15px;
+    }
+    .highlight {
+        color: #ffc74a;
+        font-weight: 600;
+    }
+
+    @media (max-width: 650px) {
+        .game-card {
+            flex-direction: column;
+            text-align: center;
+        }
+        .game-card img {
+            width: 150px;
+            height: 150px;
+        }
+    }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+    <!-- Banner -->
+    <div class="banner-box">
+        <img src="https://www.prosafeimg.com/uploads/20251121/69203ad96d055.jpg" alt="New Games Banner" />
+        <div class="banner-title">New Games Are Now Live!</div>
+    </div>
+
+    <div class="games">
+
+        <!-- There Will Be Gold -->
+        <div class="game-card">
+            <img src="https://www.prosafeimg.com/uploads/20251121/69203af42a396.png" alt="There Will Be Gold Logo" />
+            <div class="game-info">
+                <h2>There Will Be Gold</h2>
+                <p>
+                    Enter a sparkling world filled with treasures and hidden riches.
+                    This game brings <span class="highlight">golden animations, bonus treasures</span>,
+                    and immersive adventure-style visuals designed to keep you excited
+                    every round.
+                </p>
+            </div>
+        </div>
+
+        <!-- Brute Force -->
+        <div class="game-card">
+            <img src="https://www.prosafeimg.com/uploads/20251121/69203afbad38e.png" alt="Brute Force Logo" />
+            <div class="game-info">
+                <h2>Brute Force</h2>
+                <p>
+                    A high-impact action game featuring <span class="highlight">intense effects,
+                    explosive visuals</span>, and fast-paced gameplay. Perfect for
+                    players who enjoy strong energy and powerful scenes.
+                </p>
+            </div>
+        </div>
+
+        <!-- EMOJI Riches -->
+        <div class="game-card">
+            <img src="https://www.prosafeimg.com/uploads/20251121/69203ae50b71f.png" alt="Emoji Riches Logo" />
+            <div class="game-info">
+                <h2>EMOJI Riches</h2>
+                <p>
+                    Fun, colorful, and full of personality! Emoji Riches brings
+                    <span class="highlight">expressive emoji characters</span>, bright animations,
+                    and a light‑hearted experience that feels rewarding and joyful
+                    from start to finish.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
